@@ -1,0 +1,21 @@
+.wrapper {
+    border-radius: 15px;
+    border: 1px solid #000;
+    padding-bottom: 15px;
+}
+
+button.bt.btn-danger.btn-block {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form-group.has-feedback.has-feedback-left {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.label-info {
+    margin-top: 10px;
+    /*Bootstrap is being an asshole... Decided to change the background color for me.*/
+    background-color: white !important;
+}

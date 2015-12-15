@@ -1,0 +1,35 @@
+<template name="show_all_products">
+    <div class="container">
+        <h1>Show all products</h1>
+
+        <table class="table table-hover product_table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price
+                        <select id="currency">
+                            <option value="brl">BRL</option>
+                            <option value="usd">USD</option>
+                            <option value="hkd">HKD</option>
+                        </select>
+                    </th>
+                    <th>Quantity</th>
+                    <th>Select all <input type="checkbox" id="selectAll"/></th>
+                </tr>
+            </thead>
+            {{#each products}}
+                <tbody>
+                <tr>
+                    <td>{{productName}}</td>
+                    <td>{{productPrice}}</td>
+                    <td>{{productQuantity}}</td>
+                    <td><input type="checkbox" id="delete"/></td>
+                </tr>
+                </tbody>
+            {{/each}}
+        </table>
+
+
+    </div>
+
+</template>

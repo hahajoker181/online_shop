@@ -1,0 +1,37 @@
+<template name="dashboard_home">
+    <div class="container">
+        <h1>Dashboard Home</h1>
+
+        <div class="col-md-3">
+            <div class="wrapper">
+                <h4>Create Product</h4>
+                <p>Create a new product</p>
+                <a href="../dashboard/create_product">Click here</a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="wrapper">
+                <h4>Pending Orders</h4>
+                <p>There are currently (1) pending order</p>
+                <a href="../dashboard/pending_orders">Click here</a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="wrapper">
+                <h4>Show All Products</h4>
+                <p>There are currently ({{productCount}}) product</p>
+                <a href="../dashboard/show_all_products">Click here</a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="wrapper">
+                <h4>Show Messages</h4>
+                <p>(1) Unread Message</p>
+                <a href="../dashboard/show_messages">Click here</a>
+            </div>
+        </div>
+    </div>
+</template>
