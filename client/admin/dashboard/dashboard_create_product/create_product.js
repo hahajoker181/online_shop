@@ -1,6 +1,4 @@
-/**
- * Created by akiraff on 12/14/15.
- */
+/**Created by akiraff on 12/14/15.*/
 
 Template.create_product.events({
     'submit .createProduct': function (e) {
