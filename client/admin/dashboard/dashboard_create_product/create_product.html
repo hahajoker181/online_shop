@@ -1,36 +1,17 @@
 <template name="create_product">
     <div class="container">
         <h1>Create Product</h1>
+        <form class="createProduct">
+            <label>Product Name</label>
+            <input type="text" name="productName" /> <br>
 
-        <form class="form-horizontal">
-            <div class="form-group" id="createProduct">
-                <label class="col-md-2">Product Name</label>
-                <div class="col-md-10">
-                    <input type="text" class="form-control" id="product_name" placeholder="create product" />
-                </div>
-            </div>
+            <label>Product Price</label>
+            <input type="text" name="productPrice" /> <br>
 
-            <div class="form-group">
-                <label class="col-md-2">Price (HK$)
+            <label>Product Quantity</label>
+            <input type="text" name="productQuantity" /> <br>
 
-                </label>
-                <div class="col-md-10">
-                    <input type="text" class="form-control" id="price"/>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="col-md-2">Quantity</label>
-                <div class="col-md-10">
-                    <input type="text" class="form-control" id="quantity"/>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <button type="button" onclick= "this.form.reset();" class="btn btn-default btn-block createProduct">Add Product</button>
-                </div>
-            </div>
+            <button type="submit">Create Product</button>
         </form>
     </div>
 </template>

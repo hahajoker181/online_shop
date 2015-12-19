@@ -14,7 +14,7 @@
                         </select>
                     </th>
                     <th>Quantity</th>
-                    <th>Select all <input type="checkbox" id="selectAll"/></th>
+                    <th></th>
                 </tr>
             </thead>
             {{#each products}}
@@ -23,7 +23,7 @@
                     <td>{{productName}}</td>
                     <td>{{productPrice}}</td>
                     <td>{{productQuantity}}</td>
-                    <td><input type="checkbox" id="delete"/></td>
+                    <td><a href="#" id="deleteBtn">Delete</a></td>
                 </tr>
                 </tbody>
             {{/each}}
